@@ -1,22 +1,22 @@
-$(document).ready(function() {
-  $("form#input").submit(function(event) {
-    var triangle = $("input#button1");
-    var desert = $("input#button2");
-    var northPole = $("input#button3");
+$(function() {
+  $("#submit").click(function(event) {
 
-    $("#destination1").hide();
-    $("#destination2").hide();
-    $("#destination3").hide();
+    var operator = $("input:radio[name=operator]:checked").val();
 
-    if (triangle.checked){
-        $("#output#destination1").show();
-    } else if
-      (desert.checked){
-        $("#output#destination2").show();
-    } else
-      (northPole.checked)
-        $("#output#destination3").show();
-console.log();
-    });
+    // $("output.destination1").hide(".myhidden");
+    // $("output.destination2").hide(".myhidden");
+    // $("output.destination3").hide(".myhidden");
+
+    if (operator === "flight") {
+      $(".destination1").removeClass("myhidden");
+    }
+    if (operator === "read-minds") {
+      $(".destination2").removeClass("myhidden");
+    }
+    if (operator === "invisibility") {
+      $(".destination3").removeClass("myhidden");
+    }
+    // $(".output").text(result);
     event.preventDefault();
   });
+});

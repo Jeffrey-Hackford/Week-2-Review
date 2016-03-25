@@ -39,12 +39,20 @@
               <img id="superpower" src="img/flight.jpg" alt="Superman!">
             </div>
             <div class="label3">
-              <p>If you could have one superpower what would it be?</p>
-              <p><input type="radio" name="superpower" value="flight" id="button1"> -Flight</p>
-                <hr>
-              <p><input type="radio" name="superpower" value="read-minds" id="button2"> -Read minds</p>
-                <hr>
-              <p><input type="radio" name="superpower" value="invisibility" id="button3"> -invisibility</p>
+
+              <div>
+                <p>If you could have one superpower what would it be?</p>
+                <p><input type="radio" name="operator" value="flight"/> -Flight</p>
+              </div>
+<hr>
+              <div>
+                <p><input type="radio" name="operator" value="read-minds"/> -Read minds</p>
+              </div>
+<hr>
+              <div>
+                <p><input type="radio" name="operator" value="invisibility"/> -invisibility</p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -76,14 +84,14 @@
           </div>
         </div>
         <div class="container">
-          <button type="submit" class="btn btn-success">Where am I going?</button>
+          <button type="submit" id="submit" class="btn btn-success">Where am I going?</button>
         </div>
     </form>
     <h2>Based off of your quiz, you should go to:</h2>
-    <div id="output">
-        <p id="destination1"><a href="https://en.wikipedia.org/wiki/List_of_Bermuda_Triangle_incidents">The Bermuda Triangle!</a></p>
-        <p id="destination2"><a href="http://www.quarkexpeditions.com/en/arctic/expeditions/north-pole?gclid=CjwKEAjww9O3BRDp1tq0jIP023YSJAB0-j1S0D6kKUoqrO-EIsAA64QUGvMx5yXYkLiItOu0mqOwshoCogHw_wcB">The North Pole!</a></p>
-        <p id="destination3"><a href="http://www.saharadeserttour.com/">The Sahara Desert!</a></p>
+    <div class="output">
+        <p class="destination1 myhidden"><a href="https://en.wikipedia.org/wiki/List_of_Bermuda_Triangle_incidents">The Bermuda Triangle!</a></p>
+        <p class="destination2 myhidden"><a href="http://www.quarkexpeditions.com/en/arctic/expeditions/north-pole?gclid=CjwKEAjww9O3BRDp1tq0jIP023YSJAB0-j1S0D6kKUoqrO-EIsAA64QUGvMx5yXYkLiItOu0mqOwshoCogHw_wcB">The North Pole!</a></p>
+        <p class="destination3 myhidden"><a href="http://www.saharadeserttour.com/">The Sahara Desert!</a></p>
     </div>
   </body>
 </html>
