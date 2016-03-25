@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Where should you go on vacation!?</h1>
-      <div class="form">
+      <form id="input">
         <div class="row">
           <div class="col-md-4 line">
             <div class="thumbnail1">
@@ -18,9 +18,9 @@
             </div>
             <div class="label1">
               <p>Would you rather explore the depths of the ocean in a submarine, or walk on the moon?</p>
-              <p><input type="radio" name="ocean" value="ocean"> -Ocean</input></p>
+              <p><input type="radio" name="moon" value="ocean"> -Ocean</p>
                 <hr>
-              <p><input type="radio" name="moon" value="moon"> -Moon</input></p>
+              <p><input type="radio" name="moon" value="moon"> -Moon</p>
             </div>
           </div>
           <div class="col-md-4 line">
@@ -29,9 +29,9 @@
             </div>
             <div class="label2">
               <p>If you had to choose one breakfast food to eat every day for the rest of your life what would you choose?</p>
-              <p><input type="radio" name="eggs-bacon" value="eggs-bacon"> -Eggs and Bacon</input></p>
+              <p><input type="radio" name="breakfast" value="eggs-bacon"> -Eggs and Bacon</p>
                 <hr>
-              <p><input type="radio" name="french-toast" value="french-toast"> -French toast</input></p>
+              <p><input type="radio" name="breakfast" value="french-toast"> -French toast</p>
             </div>
           </div>
           <div class="col-md-4 line">
@@ -40,11 +40,11 @@
             </div>
             <div class="label3">
               <p>If you could have one superpower what would it be?</p>
-              <p><input type="radio" name="superpower" value="flight"> -Flight</input></p>
+              <p><input type="radio" name="superpower" value="flight" id="button1"> -Flight</p>
                 <hr>
-              <p><input type="radio" name="read-minds" value="read-minds"> -Read minds</input></p>
+              <p><input type="radio" name="superpower" value="read-minds" id="button2"> -Read minds</p>
                 <hr>
-              <p><input type="radio" name="invisibility" value="invisibility"> -invisibility</input></p>
+              <p><input type="radio" name="superpower" value="invisibility" id="button3"> -invisibility</p>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="label4">
               <p>Choose your favorite color!</p>
-              <p><input id="color" class="form-control" type="color"></input></p>
+              <input id="color" class="form-control" type="color">
             </div>
           </div>
           <div class="col-md-4 line">
@@ -78,12 +78,12 @@
         <div class="container">
           <button type="submit" class="btn btn-success">Where am I going?</button>
         </div>
-    </div>
+    </form>
     <h2>Based off of your quiz, you should go to:</h2>
     <div id="output">
-        <p><a href="https://en.wikipedia.org/wiki/List_of_Bermuda_Triangle_incidents">The Bermuda Triangle!</a></p>
-        <p><a href="http://www.quarkexpeditions.com/en/arctic/expeditions/north-pole?gclid=CjwKEAjww9O3BRDp1tq0jIP023YSJAB0-j1S0D6kKUoqrO-EIsAA64QUGvMx5yXYkLiItOu0mqOwshoCogHw_wcB">The North Pole!</a></p>
-        <p><a href="http://www.saharadeserttour.com/">The Sahara Desert!</a></p>
+        <p id="destination1"><a href="https://en.wikipedia.org/wiki/List_of_Bermuda_Triangle_incidents">The Bermuda Triangle!</a></p>
+        <p id="destination2"><a href="http://www.quarkexpeditions.com/en/arctic/expeditions/north-pole?gclid=CjwKEAjww9O3BRDp1tq0jIP023YSJAB0-j1S0D6kKUoqrO-EIsAA64QUGvMx5yXYkLiItOu0mqOwshoCogHw_wcB">The North Pole!</a></p>
+        <p id="destination3"><a href="http://www.saharadeserttour.com/">The Sahara Desert!</a></p>
     </div>
   </body>
 </html>
