@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vacation Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Where should you go on vacation!?</h1>
+      <div class="form">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail1">
+              <img id="moon" src="img/moon.jpg" alt="Moon">
+            </div>
+            <div class="label1">
+              <p>Would you rather explore the depths of the ocean in a submarine, or walk on the moon?</p>
+              <p><input type="radio" name="ocean" value="ocean"> -Ocean</input></p>
+                <hr>
+              <p><input type="radio" name="moon" value="moon"> -Moon</input></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail2">
+              <img id="breakfast" src="img/breakfast.jpg" alt="Breakfast foods">
+            </div>
+            <div class="label2">
+              <p>If you had to choose one breakfast food to eat every day for the rest of your life what would you choose?</p>
+              <p><input type="radio" name="eggs-bacon" value="eggs-bacon"> -Eggs and Bacon</input></p>
+                <hr>
+              <p><input type="radio" name="french-toast" value="french-toast"> -French toast</input></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail3">
+              <img id="superpower" src="img/flight.jpg" alt="Superman!">
+            </div>
+            <div class="label3">
+              <p>If you could have one superpower what would it be?</p>
+              <p><input type="radio" name="superpower" value="flight"> -Flight</input></p>
+                <hr>
+              <p><input type="radio" name="read-minds" value="read-minds"> -Read minds</input></p>
+            </div>
+          </div>
+        </div>
+          <hr>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <div class="thumbnail4">
+              <img id="favorite-color" src="img/colorwheel.png" alt="Colorwheel!">
+            </div>
+            <div class="label4">
+              <p>Choose your favorite color!</p>
+              <p><input id="color" class="form-control" type="color"></input></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail5">
+              <img id="seasons" src="img/seasons.jpg" alt="Four Seasons">
+            </div>
+            <div class="label4">
+              <p>What is your favorite season?</p>
+                <select class="form-control" id="seasons">
+                  <option value="0"> </option>
+                  <option value="1">Winter</option>
+                  <option value="2">Spring</option>
+                  <option value="3">Summer</option>
+                  <option value="4">Fall</option>
+                </select>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <button type="submit" class="btn btn-success">Where am I going?</button>
+        </div>
+    </div>
+    <div id="output">
+      <h2>Based off of your quiz, you should go to:</h2>
+        <p><a href="img/bermuda-triangle.jpg" alt="Bermuda Triangle">The Bermuda Triangle!</a></p>
+    </div>
+  </body>
+</html>
